@@ -12,9 +12,8 @@ RUN npm install -g ionic
 
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 
-COPY MyWebsite/ ~/MyWebsite
+COPY MyWebsite/ ~
 
 EXPOSE 9121
 
-WORKDIR MyWebsite
 CMD ["ionic", "serve","--port","9121"]
