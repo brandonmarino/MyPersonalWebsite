@@ -10,6 +10,8 @@ RUN npm install -g cordova
 
 RUN npm install -g ionic
 
+RUN ln -s /usr/bin/nodejs /usr/bin/node
+
 COPY MyWebsite/ ~/MyWebsite
 
 EXPOSE 9121
