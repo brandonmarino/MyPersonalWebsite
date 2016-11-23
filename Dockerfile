@@ -17,4 +17,4 @@ COPY MyWebsite/ ~/MyWebsite
 EXPOSE 9121
 
 WORKDIR ~/MyWebsite
-CMD ["ionic", "serve", "--all", "--port", "8100", "--livereload-port", "35729"]
+CMD ["ionic", "serve", "--all", "--port", "9121", "--livereload-port", "35729", "&&", "while", "true;", "do", "sleep", "1000;", "done"]
