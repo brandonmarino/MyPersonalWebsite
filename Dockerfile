@@ -14,6 +14,5 @@ COPY MyWebsite/ ~/MyWebsite
 
 EXPOSE 9121
 
-RUN ["chmod", "+x", "Users/ubuntu/MyWebsite/start_server.sh”]
-
-CMD ["~/MyWebsite/start_server.sh", "start"]
+WORKDIR MyWebsite
+CMD ["ionic", "serve","--port","9121"]
