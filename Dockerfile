@@ -12,4 +12,4 @@ RUN npm install -g ionic
 
 COPY MyWebsite/ ~/MyWebsite
 
-EXPOSE 80
+EXPOSE 9121
