@@ -16,6 +16,22 @@
 
 div.keepcardexpaded{
 	height:100%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+p.ci-title{
+	font-size: 200%;
+	font-weight: bold;
+	font-color: #373737;
+}
+
+p.ci-content{
+	font-size: 120%;
+	padding-top: 2%;
+	font-color: #3eff37;
 }
 
 div.card {
@@ -105,7 +121,7 @@ p.aboutme-title {
 p.aboutme-content {
 	font-size: 120%;
 	padding-top: 2%;
-	font-color: #3eff37;
+	font-color: #373737;
 
 }
 
