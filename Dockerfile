@@ -14,4 +14,5 @@ COPY MyWebsite/ ~/MyWebsite
 
 EXPOSE 9121
 
+RUN ["chmod", "+x", "~/MyWebsite/start_server.sh”]
 CMD ["~/MyWebsite/start_server.sh", "start"]
