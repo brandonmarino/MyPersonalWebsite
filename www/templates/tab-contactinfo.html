@@ -1,16 +1,24 @@
 <ion-view view-title="Contact Info">
   <ion-content class="padding">
     <div class="card">
-    	<div class="keepcardexpaded">
-    		<p class="ci-title">
-    			Contact Me
-    		</p>
-    		<p class="ci-content">
-    			Phone Number: (416) 825-6522
-    			<br>
-    			Email: brandon.a.marino@gmail.com
-    		</p>
-    	</div>
+      <div class="keepcardexpaded">
+    	<p class="ci-title">
+    	  Contact Me
+    	</p>
+    	<p class="ci-content">
+    	  Phone Number: (416) 825-6522
+    	  <br>
+    	  Email: brandon.a.marino@gmail.com
+    	</p>
+        <p class="preIconText">
+          Again, you can find some more information about me below! I'd love to head from you!
+        </p>
+        <div class="allIcons">
+          <img src="img/github.png" ng-click="goToGitHub()" height="45px" width="45px">
+          <img src="img/linkedin.png" ng-click="goToLinkedIn()" height="45px" width="45px">
+          <img src="img/facebook.png" ng-click="goToFaceBook()" height="45px" width="45px">
+        </div>
+      </div>
     </div>
   </ion-content>
 </ion-view>

@@ -33,5 +33,13 @@ angular.module('starter.controllers', [])
 })
 
 .controller('ContactInfoCtrl', function($scope) {
-  
+  $scope.goToGitHub = function(){
+    window.open("http://www.github.com/brandonmarino");
+  }
+  $scope.goToFaceBook = function(){
+    window.open("http://www.facebook.com/Brandon.Marino4");
+  }
+  $scope.goToLinkedIn = function(){
+    window.open("http://www.linkedin.com/in/brandon-marino-1523a990");
+  }
 });
