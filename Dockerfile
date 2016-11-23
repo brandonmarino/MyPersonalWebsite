@@ -4,7 +4,7 @@ MAINTAINER Brandon Marino <brandon.a.marino@gmail.com>
 
 RUN apt-get update
 
-RUN apt-get install nodejs
+RUN apt-get -y install nodejs npm
 
 RUN npm install -g cordova
 
