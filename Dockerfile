@@ -13,3 +13,5 @@ RUN npm install -g ionic
 COPY MyWebsite/ ~/MyWebsite
 
 EXPOSE 9121
+
+CMD ["~/MyWebsite/start_server.sh", "start"]
