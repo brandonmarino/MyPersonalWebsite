@@ -1,0 +1,33 @@
+<ion-view view-title="Brandon Marino">
+  <ion-content class="padding">
+    <div class="card">
+      <p>
+          Where my cool thing will go
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="imageandinfo">
+        <div class="profileimage">
+          <img width="10px" class="myImage" src={{myimage}} >
+        </div>
+        <div class="contactinfo">
+          <p ng-bind-html-unsafe=contactinfo>
+          
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="about-me">
+        <p class="aboutme-title">
+          Who I Am
+        </p>
+        <p class="aboutme-content">
+          {{aboutme}}
+        </p>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,119 @@
+.tabs{
+/*background-color: red !important;*/
+}
+
+.nav-bar-block, .bar {
+  /*background-color: red !important;*/
+}
+
+.padding {
+	background-color:#D8D8D8;
+}
+
+p.aboutme-title {
+	font-size: 200%;
+	font-weight: bold;
+}
+
+p.project-title{
+	font-size: 200%;
+	text-align: center;
+}
+
+
+div {
+	border-width: 1px;
+	/*border-style: solid;
+	border-colour: black;
+	*/
+}
+
+div.imageandinfo {
+	padding-left: 2%;
+}
+div.contactinfo {
+	float: right;
+	display: table-cell;
+    vertical-align: middle;
+}
+
+div.profileimage {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+	float: left;
+}
+
+div.about-me {
+	padding-top: 0.5%;
+	padding-right: 1%;
+	padding-left: 1%;
+	padding-bottom: 0.5%;
+    min-height: 320px;
+}
+
+div.image-wrapper {
+	padding-top: 1%;
+	padding-right: 1%;
+	padding-left: 1%;
+	padding-bottom: 1%;
+	min-height: 320px;
+}
+
+p.project-title {
+	font-size: 200%;
+	font-weight: bold;
+}
+
+div.projects-UniTap {
+	float: left;
+	width: 49%;
+	padding-top: 1%;
+	padding-right: 5%;
+	padding-left: 5%;
+	padding-bottom: 1%;
+}
+
+div.projects-ClubHub {
+	float: right;
+	width: 49%;
+	padding-top: 1%;
+	padding-right: 5%;
+	padding-left: 5%;
+	padding-bottom: 1%;
+}
+img.myImage {
+	margin: auto;
+	display: block;
+	text-align: center;
+	width: 10%;
+	
+	display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+img.Clubhub-Image {
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin: auto;
+	display: block;
+	text-align: center;
+	width: 60%;
+}
+
+img.UniTap-Image {
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin: auto;
+	display: block;
+	text-align: center;
+	width: 60%;
+}
