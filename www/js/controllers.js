@@ -6,7 +6,15 @@ angular.module('starter.controllers', [])
   $scope.aboutme = "Hello there! My name is Brandon Marino and I'm a software engineer from Toronto, Ontario. I enjoy finding simple solutions to complex problems. I am always looking for new projects to work on.";
   $scope.myimage = "img/myprofileimage.png";
 
-  
+  $scope.goToGitHub = function(){
+    window.open("http://www.github.com/brandonmarino");
+  }
+  $scope.goToFaceBook = function(){
+    window.open("http://www.facebook.com/Brandon.Marino4");
+  }
+  $scope.goToLinkedIn = function(){
+    window.open("http://www.linkedin.com/in/brandon-marino-1523a990");
+  }
 })
 
 .controller('PortfolioCtrl', function($scope) {
