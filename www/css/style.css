@@ -7,39 +7,69 @@
 }
 
 .padding {
-	background-color:#D8D8D8;
+	background-color:#1C2833;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
-p.aboutme-title {
-	font-size: 200%;
-	font-weight: bold;
+div.myname{
+	vertical-align: middle;
+	font-weight: Bold;
+	font-size: 40PT;
+	width: 100%;
+	height: 80px;
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	
+}
+div.pdf-wrapper{
+	width: 100%;
+	height: 1000px;
 }
 
-p.project-title{
-	font-size: 200%;
-	text-align: center;
+hr.bottomdivider {
+	height: 5px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
 }
-
 
 div {
-	border-width: 1px;
-	/*border-style: solid;
+	font-family: 'Open Sans';
+	font-color: #3eff37;
+	/*
+	border-width: 3px;
+	border-style: solid;
 	border-colour: black;
 	*/
 }
 
-div.imageandinfo {
-	padding-left: 2%;
+p {
+	font-family: 'Open Sans';
+	font-color: #373737;
 }
-div.contactinfo {
-	float: right;
-	display: table-cell;
-    vertical-align: middle;
+
+/*about me*/
+div.insideaboutmecard {
+	display: table;
+	width: 100%;
+	padding-bottom: 1%;
 }
 
 div.profileimage {
-    width: 200px;
-    height: 200px;
+	display: table-cell;
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+	float: left;
+}
+
+img.myImage {
+	width: 300px;
+    height: 300px;
     position: relative;
     overflow: hidden;
     -webkit-border-radius: 50%;
@@ -47,17 +77,43 @@ div.profileimage {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
-	float: left;
 }
 
 div.about-me {
-	padding-top: 0.5%;
-	padding-right: 1%;
-	padding-left: 1%;
-	padding-bottom: 0.5%;
-    min-height: 320px;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 3%;
+	padding-bottom: 1%;
+	border-right:1px solid #16222c;
+	vertical-align: top;
+	display: table-cell;
+
 }
 
+p.aboutme-title {
+	font-size: 200%;
+	font-weight: bold;
+	font-color: #373737;
+}
+p.aboutme-content {
+	font-size: 120%;
+	padding-top: 2%;
+	font-color: #3eff37;
+
+}
+
+div.other-links {
+	vertical-align: top;
+	width:30%;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 3%;
+	padding-bottom: 1%;
+	display: table-cell;
+
+}
+
+/*Portfolio CSS*/
 div.image-wrapper {
 	padding-top: 1%;
 	padding-right: 1%;
@@ -65,6 +121,12 @@ div.image-wrapper {
 	padding-bottom: 1%;
 	min-height: 320px;
 }
+
+p.project-title{
+	font-size: 200%;
+	text-align: center;
+}
+
 
 p.project-title {
 	font-size: 200%;
@@ -88,17 +150,7 @@ div.projects-ClubHub {
 	padding-left: 5%;
 	padding-bottom: 1%;
 }
-img.myImage {
-	margin: auto;
-	display: block;
-	text-align: center;
-	width: 10%;
-	
-	display: inline;
-    margin: 0 auto;
-    height: 100%;
-    width: auto;
-}
+
 
 img.Clubhub-Image {
 	padding-top: 1%;
@@ -116,4 +168,11 @@ img.UniTap-Image {
 	display: block;
 	text-align: center;
 	width: 60%;
+}
+
+/*Contact Info*/
+div.contactinfo {
+	float: right;
+	display: table-cell;
+    vertical-align: middle;
 }
