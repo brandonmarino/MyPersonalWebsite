@@ -1,24 +1,34 @@
-<ion-view view-title="Portfolio">
+<ion-view view-title="What I've Worked On">
   <ion-content class="padding">
-      <div id="projects-wrapper">
-        <div class="projects-UniTap" ng-click="goToApp('UniTap')">
-        <p class="project-title">
+    <div class="tab-content">
+      <div id="all-projects">
+        <div class="project" ng-repeat="project in projects" ng-click="goToApp('UniTap')">
+        <p class="project-title" >
+          {{project.name}}
+        </p>
+        <img class="project-image" src={{project.image}}>
+          <p>
+            {{project.description}}
+          </p>
+        </div>
+        <!--p class="project-title">
           UniTap
         </p>
-        <img class="UniTap-Image" src={{unitapimage}}>
+        <img class="project-image" src={{unitapimage}}>
           <p class="UniTap-Description">
             {{unitapdescr}}
           </p>
-        </div>
-        <div class="projects-ClubHub">
+        </div-->
+        <!--div class="project">
           <p class="project-title">
             ClubHub
           </p>
-          <img src={{clubhubimage}} class="Clubhub-Image">
+          <img src={{clubhubimage}} class="project-image">
           <p class="Clubhub-Description">
             {{clubhubdescr}}
           </p>
-        </div>
+        </div-->
       </div>
+    </div>
   </ion-content>
 </ion-view>

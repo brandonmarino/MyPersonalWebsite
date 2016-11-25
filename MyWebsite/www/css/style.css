@@ -5,16 +5,37 @@
 .title.title-center.header-item, .custom-icon {
     color: white!important;
 }
-
+/*
+.padding{
+	background: url("https://images.freecreatives.com/wp-content/uploads/2016/02/Vintage-Wood-Plank-Desktop-Background.jpg")!important;;
+	background: white !important;
+	padding-top: 0%!important;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+}
+*/
 .details {
     padding: 0px 12px 20px 12px;
+}
+
+
+.tab-content{
+	height:100%;
+	padding-top: 2%;
+	padding-left: 2%;
+	padding-right: 2%;
+	background-color:white;
 }
 
 .details img {
     float: left;
     margin-right: 12px;
 }
-
+/*
+div {
+  border: 2px solid black
+}
+*/
 div.keepcardexpaded{
 	height:100%;
 	padding-top: 2%;
@@ -52,36 +73,38 @@ p.preIconText{
 }
 
 div.myname{
+	width: 100%;
+	min-width: 383px;
 	vertical-align: middle;
 	font-weight: Bold;
-	font-size: 40PT;
-	width: 100%;
+	font-size: 30PT;
 	height: 80px;
 	padding-top: 2.5%;
 	padding-bottom: 2.5%;
-	padding-left: 2.5%;
+	padding-left: 1%;
 	padding-right: 2.5%;
 	
 }
 
 /*about me*/
 div.insideaboutmecard {
-	display: table;
 	width: 100%;
 	padding-bottom: 1%;
 }
 
 div.profileimage {
-	display: table-cell;
-    padding-top: 5%;
-    padding-right: 5%;
-    padding-left: 5%;
-	float: left;
+    vertical-align: top;
+    width: 300px;
+    height: 300px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+	display: inline-block;
 }
 
 img.myImage {
-	width: 300px;
-    height: 300px;
+	width:270px;
+    height: 270px;
     position: relative;
     overflow: hidden;
     -webkit-border-radius: 50%;
@@ -94,10 +117,12 @@ img.myImage {
 div.about-me {
 	padding-left: 2%;
 	padding-right: 2%;
-	padding-top: 3%;
-	padding-bottom: 1%;
+	padding-top: 2%;
+	padding-bottom: 2%;
 	vertical-align: top;
-	display: table-cell;
+	max-width: 1000px;
+    height: 300px;
+	display: inline-block;
 }
 
 p.aboutme-title {
@@ -113,14 +138,15 @@ p.aboutme-content {
 }
 
 div.other-links {
-	vertical-align: top;
-	width:30%;
+	max-width:500px;
+	height: 300px;
+
 	padding-left: 2%;
 	padding-right: 2%;
 	padding-top: 3%;
 	padding-bottom: 1%;
-	display: table-cell;
-
+	display: inline-block;
+	vertical-align: top;
 }
 
 /*Portfolio CSS*/
@@ -132,53 +158,28 @@ div.image-wrapper {
 	min-height: 320px;
 }
 
-p.project-title{
-	font-size: 200%;
-	text-align: center;
+div.project {
+	padding-top: 1%;
+	padding-right: 1%;
+	padding-left: 1%;
+	padding-bottom: 1%;
+	width: 800px;
+	display: inline-block;
 }
-
 
 p.project-title {
 	font-size: 200%;
 	font-weight: bold;
 }
 
-div.projects-UniTap {
-	float: left;
-	width: 49%;
-	padding-top: 1%;
-	padding-right: 5%;
-	padding-left: 5%;
-	padding-bottom: 1%;
-}
-
-div.projects-ClubHub {
-	float: right;
-	width: 49%;
-	padding-top: 1%;
-	padding-right: 5%;
-	padding-left: 5%;
-	padding-bottom: 1%;
-}
-
-img.Clubhub-Image {
+img.project-image {
 	padding-top: 1%;
 	padding-bottom: 1%;
 	margin: auto;
 	display: block;
 	text-align: center;
-	width: 60%;
+	width: 100%;
 }
-
-img.UniTap-Image {
-	padding-top: 1%;
-	padding-bottom: 1%;
-	margin: auto;
-	display: block;
-	text-align: center;
-	width: 60%;
-}
-
 /*Contact Info*/
 div.contactinfo {
 	float: right;

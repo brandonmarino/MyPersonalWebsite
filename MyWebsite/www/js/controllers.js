@@ -1,5 +1,4 @@
 angular.module('starter.controllers', [])
-
 .controller('AboutMeCtrl', function($scope) {
   //personal info
   $scope.myname = "Brandon Marino";
@@ -17,21 +16,6 @@ angular.module('starter.controllers', [])
   }
 })
 
-.controller('PortfolioCtrl', function($scope) {
-  //project descriptions
-  $scope.unitapdescr= "Nullam a luctus ipsum. Nulla purus urna, ullamcorper vitae volutpat non, elementum sed urna. Vivamus commodo tincidunt venenatis. Nullam semper enim a sem accumsan ornare. Mauris hendrerit odio";
-  $scope.clubhubdescr= "Nullam a luctus ipsum. Nulla purus urna, ullamcorper vitae volutpat non, elementum sed urna. Vivamus commodo tincidunt venenatis. Nullam semper enim a sem accumsan ornare. Mauris hendrerit odio";
-  
-  // project images
-  $scope.unitapimage = "http://i1-news.softpedia-static.com/images/news2/Android-M-Developer-Preview-Screenshot-Tour-482648-3.jpg";
-  $scope.clubhubimage = "http://i1-news.softpedia-static.com/images/news2/Android-M-Developer-Preview-Screenshot-Tour-482648-3.jpg";
-  $scope.contactinfo = "Brandon Marino <br> (416)-825-6522<br>brandon.a.marino@gmail.com";
-})
-
-.controller('ResumeCtrl', function($scope) {
-
-})
-
 .controller('ContactInfoCtrl', function($scope) {
   $scope.goToGitHub = function(){
     window.open("http://www.github.com/brandonmarino");
@@ -42,4 +26,30 @@ angular.module('starter.controllers', [])
   $scope.goToLinkedIn = function(){
     window.open("http://www.linkedin.com/in/brandon-marino-1523a990");
   }
+  $scope.contactinfo = "Brandon Marino <br> (416)-825-6522<br>brandon.a.marino@gmail.com";
+})
+
+.controller('PortfolioCtrl', function($scope) {
+  $scope.projects=[];
+  
+  //unitap
+  $scope.projects.push({
+  "name":"UniTap",
+  "image":"img/unitaponphone.jpg",
+  "description":"Nullam a luctus ipsum. Nulla purus urna, ullamcorper vitae volutpat non, elementum sed urna. Vivamus commodo tincidunt venenatis. Nullam semper enim a sem accumsan ornare. Mauris hendrerit odio"
+  });
+  //clubhub
+  $scope.projects.push({
+  "name":"ClubHub",
+  "image":"img/clubhubonphone.jpg",
+  "description":"Nullam a luctus ipsum. Nulla purus urna, ullamcorper vitae volutpat non, elementum sed urna. Vivamus commodo tincidunt venenatis. Nullam semper enim a sem accumsan ornare. Mauris hendrerit odio"
+  });
+})
+
+.controller('ExperienceCtrl', function($scope) {
+
+})
+
+.controller('SkillsCtrl', function($scope) {
+
 });

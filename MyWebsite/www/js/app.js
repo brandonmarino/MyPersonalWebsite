@@ -60,23 +60,33 @@ angular.module('starter', ['ionic', 'pdf', 'starter.controllers', 'starter.servi
         }
       }
     })
-
-  .state('tab.resume', {
-    url: '/resume',
-    views: {
-      'tab-resume': {
-        templateUrl: 'templates/tab-resume.html',
-        controller: 'ResumeCtrl'
-      }
-    }
-  })
-
+  
   .state('tab.contactinfo', {
     url: '/contactinfo',
     views: {
       'tab-contactinfo': {
         templateUrl: 'templates/tab-contactinfo.html',
         controller: 'ContactInfoCtrl'
+      }
+    }
+  })
+
+  .state('tab.experience', {
+    url: '/experience',
+    views: {
+      'tab-experience': {
+        templateUrl: 'templates/tab-experience.html',
+        controller: 'ExperienceCtrl'
+      }
+    }
+  })
+
+  .state('tab.skills', {
+    url: '/skills',
+    views: {
+      'tab-skills': {
+        templateUrl: 'templates/tab-skills.html',
+        controller: 'SkillsCtrl'
       }
     }
   });
