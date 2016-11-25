@@ -1,22 +1,18 @@
-.tabs{
-/*background-color: red !important;*/
+.nav-bar-block, .bar, .tabs {
+	background-color: #4169e1 !important;
 }
 
-.nav-bar-block, .bar {
-  /*background-color: red !important;*/
+.title.title-center.header-item, .custom-icon {
+    color: white!important;
 }
 
-.padding {
-	background-color:#1C2833;
-	padding-top: 1%;
-	padding-bottom: 1%;
-	padding-left: 5%;
-	padding-right: 5%;
+.details {
+    padding: 0px 12px 20px 12px;
 }
 
-div {
-	/*border-style: solid;
-    border-width: 5px;*/
+.details img {
+    float: left;
+    margin-right: 12px;
 }
 
 div.keepcardexpaded{
@@ -37,10 +33,6 @@ p.ci-content{
 	font-size: 120%;
 	padding-top: 2%;
 	font-color: #3eff37;
-}
-
-div.card {
-	background-color: #FEFCFF;
 }
 
 div.icon {
@@ -70,21 +62,6 @@ div.myname{
 	padding-left: 2.5%;
 	padding-right: 2.5%;
 	
-}
-div.pdf-wrapper{
-	width: 100%;
-	height: 1000px;
-}
-
-hr.bottomdivider {
-	height: 5px;
-	border: 0;
-	box-shadow: 0 10px 10px -10px #8c8b8b inset;
-}
-
-p {
-	font-family: 'Open Sans';
-	font-color: #373737;
 }
 
 /*about me*/
@@ -121,7 +98,6 @@ div.about-me {
 	padding-bottom: 1%;
 	vertical-align: top;
 	display: table-cell;
-
 }
 
 p.aboutme-title {
@@ -184,7 +160,6 @@ div.projects-ClubHub {
 	padding-left: 5%;
 	padding-bottom: 1%;
 }
-
 
 img.Clubhub-Image {
 	padding-top: 1%;

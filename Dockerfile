@@ -1,20 +1,12 @@
-FROM ubuntu:16.04
+FROM node:latest
 
 MAINTAINER Brandon Marino <brandon.a.marino@gmail.com>
 
-RUN apt-get update
-
-RUN apt-get -y install nodejs npm
-
-RUN npm install -g cordova
-
-RUN npm install -g ionic
-
-RUN ln -s /usr/bin/nodejs /usr/bin/node
-
 COPY MyWebsite/ ~/MyWebsite
-
-EXPOSE 9121
-
 WORKDIR ~/MyWebsite
-CMD ["ionic", "serve", "--port", "9121"]
+
+RUN npm install -g cordova ionic && npm rebuild node-sass
+
+EXPOSE 8100
+
+CMD ["ionic", "serve"]
