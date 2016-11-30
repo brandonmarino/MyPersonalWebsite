@@ -34,19 +34,25 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PortfolioCtrl', function($scope) {
+  $scope.goTo = function(link){
+    if (link!="")
+      window.open(link);
+  }
   $scope.projects=[];
   
   //unitap
   $scope.projects.push({
     "name":"UniTap",
     "image":"img/unitaponphone.jpg",
+    "link":"http://github.com/brandonmarino/UniTap",
     "description":"An app that allows clients to enter public transit vehicles, private businesses, and other forms of secured locations using their android powered phone as opposed to a traditional tap-on card. Built using a mix of back-end Java and front-end XML in Android Studio utilizing Host-Card Based Emulation."
   });
   //clubhub
   $scope.projects.push({
-    "name":"ClubHub",
+    "name":"Carleton Clubs",
     "image":"img/clubhubonphone.jpg",
-    "description":"An app which allows users to connect with the clubs in their area regardless of where they currently live. This app was built using Angular.js and is cross compatible with Windows, iOS and Android."
+    "link":"https://github.com/brandonmarino/CarletonClubs",
+    "description":"An app which allows the students of Carleton University to connect with clubs which they may never have known existed. This app was built using Angular.js and is cross compatible with Windows, iOS and Android. This app is still under development."
   });
 })
 
@@ -63,8 +69,7 @@ angular.module('starter.controllers', [])
     "title":"Test Developer",
     "image":"img/deighton.png",
     "link":"http://deighton.com",
-    "description":"Here, I developed Web Service and Automated UI tests for an in-development software project. The work involved collaboration with the developers of multiple projects to ensure the highest possible quality upon launch. This position allowed me to work in an agile environment with other driven individuals. C#, JavaScript and my knowledge of HTML were used extensively in this position."
-    
+    "description":"In this position, I developed Web Service and Automated UI tests for an in-development software project. The work involved collaboration with the developers of multiple projects to ensure the highest possible quality upon launch. This position allowed me to work in an agile environment with other driven individuals. C#, JavaScript and my knowledge of HTML were used extensively in this position."
   });
   //deighton
 
@@ -131,6 +136,27 @@ angular.module('starter.controllers', [])
   });
   
   $scope.languages.push({
+    "name":"Python",
+    "image":"img/skills_images/python.png",
+    "percentage":40,
+    "years":"2"
+  });
+
+  $scope.languages.push({
+    "name":"Ruby on Rails",
+    "image":"img/skills_images/rails.png",
+    "percentage":20,
+    "years":"1"
+  });
+  
+  $scope.languages.push({
+    "name":"Golang",
+    "image":"img/skills_images/go.png",
+    "percentage":20,
+    "years":"1"
+  });
+
+  $scope.languages.push({
     "name":"C",
     "image":"img/skills_images/c.png",
     "percentage":80,
@@ -144,25 +170,6 @@ angular.module('starter.controllers', [])
     "years":"2"
   });
 
-  $scope.languages.push({
-    "name":"Python",
-    "image":"img/skills_images/python.png",
-    "percentage":40,
-    "years":"2"
-  });
-
-  $scope.languages.push({
-    "name":"Ruby on Rails",
-    "image":"img/skills_images/rails.png",
-    "percentage":20,
-    "years":"1"
-  });
-  $scope.languages.push({
-    "name":"Golang",
-    "image":"img/skills_images/go.png",
-    "percentage":20,
-    "years":"1"
-  });
   $scope.languages.push({
     "name":"C++",
     "image":"img/skills_images/cplusplus.png",

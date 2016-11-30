@@ -2,15 +2,28 @@
   <ion-content class="padding">
     <div class="tab-content">
       <div id="all-projects">
-        <div class="project" ng-repeat="project in projects" ng-click="goToApp('UniTap')">
-        <p class="project-title" >
-          {{project.name}}
-        </p>
-        <img class="project-image" src={{project.image}}>
+        <div class="project">
+          <p class="project-title" >
+            {{projects[0].name}} 
+            <img src="img/github.png" ng-click="goTo('{{projects[0].link}}')" height="40px">
+          </p>
+          <img class="project-image" src={{projects[0].image}}>
           <p>
-            {{project.description}}
+            {{projects[0].description}}
+          </p>
+
+        </div>
+        <div class="project">
+          <p class="project-title" >
+            <br>
+            {{projects[1].name}}
+          </p>
+          <img class="project-image" src={{projects[1].image}}>
+          <p>
+            {{projects[1].description}}
           </p>
         </div>
+
       </div>
     </div>
   </ion-content>

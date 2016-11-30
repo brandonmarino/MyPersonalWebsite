@@ -1,7 +1,3 @@
-/*div{
-	border: 1px solid;
-}*/
-
 .nav-bar-block, .bar, .tabs {
 	background-color: #4169e1 !important;
 }
@@ -230,8 +226,10 @@ div.project {
 }
 
 p.project-title {
+	height: 40px;
 	font-size: 200%;
 	font-weight: bold;
+
 }
 
 img.project-image {
