@@ -1,23 +1,88 @@
+/*div{
+	border: 1px solid;
+}*/
+
 .nav-bar-block, .bar, .tabs {
 	background-color: #4169e1 !important;
 }
 
-.title.title-center.header-item, .custom-icon {
-    color: white!important;
+.platform-android .bar .title {
+    line-height: 52px !important;
 }
-/*
-.padding{
-	background: url("https://images.freecreatives.com/wp-content/uploads/2016/02/Vintage-Wood-Plank-Desktop-Background.jpg")!important;;
-	background: white !important;
-	padding-top: 0%!important;
-	padding-left: 2.5%;
-	padding-right: 2.5%;
+.skills-profile{
+	padding-top: 2%;
 }
-*/
+.language-skill{
+	min-width:300px;
+	max-width: 600px;
+	width:100%;
+	height:100px;
+	display: inline-block;
+}
+
+.prog-title{
+	display: inline-block;
+	vertical-align: middle;
+	width:80px;
+}
+
+.prog-bar{
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 2%;
+	width:70%;
+}
+.percentage-bar{
+	border-radius: 25px; 
+	height: 20px; 
+	transition: width 0.1s;
+}
+.experience{
+	padding-top: 1%;
+	padding-left: 1%;
+	padding-bottom: 1%;
+	min-width: 310px;
+	min-height: 135px;
+	width:100%;
+	vertical-align: top;
+	display: inline-block;
+}
+
+.experience-title{
+	padding-top: 2%;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.exp-image{
+	
+	max-width: 100px;
+	width:20%;
+	vertical-align: middle;
+	display: inline-block;
+}
+.exp-info{
+	padding-left: 2%;
+	font-size: 15px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.exp-description{
+	font-size: 15px;
+	padding-left: 2%;
+
+	vertical-align: middle;
+	display: inline-block;
+	
+	height: 100%;
+	min-width: 200px;
+	max-width: 500px;
+}
+
 .details {
     padding: 0px 12px 20px 12px;
 }
-
 
 .tab-content{
 	height:100%;
@@ -31,11 +96,7 @@
     float: left;
     margin-right: 12px;
 }
-/*
-div {
-  border: 2px solid black
-}
-*/
+
 div.keepcardexpaded{
 	height:100%;
 	padding-top: 2%;
@@ -74,7 +135,7 @@ p.preIconText{
 
 div.myname{
 	width: 100%;
-	min-width: 383px;
+	/*min-width: 383px;*/
 	vertical-align: middle;
 	font-weight: Bold;
 	font-size: 30PT;
@@ -82,7 +143,7 @@ div.myname{
 	padding-top: 2.5%;
 	padding-bottom: 2.5%;
 	padding-left: 1%;
-	padding-right: 2.5%;
+	padding-right: 1%;
 	
 }
 
@@ -163,8 +224,9 @@ div.project {
 	padding-right: 1%;
 	padding-left: 1%;
 	padding-bottom: 1%;
-	width: 800px;
+	max-width: 800px;
 	display: inline-block;
+	vertical-align:top;
 }
 
 p.project-title {
@@ -178,7 +240,7 @@ img.project-image {
 	margin: auto;
 	display: block;
 	text-align: center;
-	width: 100%;
+	max-width: 100%;
 }
 /*Contact Info*/
 div.contactinfo {

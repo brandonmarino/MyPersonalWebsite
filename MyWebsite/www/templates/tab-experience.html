@@ -1,6 +1,49 @@
 <ion-view view-title="My Experience">
   <ion-content class="padding">
       <div class="tab-content">
+      	<div class="experience-types">
+      		<div class="experience-type work">
+      			<p class="experience-title">
+      				My Career
+      			</p>
+            <hr class="bottomdivider">
+            <div class="career-experience experience" ng-repeat="job in jobs" ng-click="gotoExperience('{{job.link}}')">
+                <img class="exp-image" src={{job.image}}>
+                <p class="exp-info">
+                  {{job.title}}<br>{{job.company}}
+                </p>
+              <p class="exp-description">
+                {{job.description}}
+              </p>
+            </div>
+      		</div>
+
+          <div class="experience-type events">
+            <p class="experience-title">
+              Events I've attended
+            </p>
+            <hr class="bottomdivider">
+            <div class="experience event-experience" ng-repeat="event in events" ng-click="gotoExperience('{{event.link}}')">
+              <img class="exp-image" src={{event.image}}>
+              <p class="exp-info">
+                {{event.name}}<br>{{event.date}}
+              </p>              
+            </div>
+          </div>
+
+      		<div class="experience-type education">
+      			<p class="experience-title">
+      				My Studies
+      			</p>
+            <hr class="bottomdivider">
+            <div class="experience education-experience" ng-repeat="school in schools" ng-click="gotoExperience('{{school.link}}')">
+              <img class="exp-image" src={{school.image}}>
+              <p class="exp-info">
+                {{school.degree}}<br>{{school.name}}<br>{{school.grad}}
+              </p>
+            </div>
+          </div>
+      	</div>
       </div>
   </ion-content>
 </ion-view>

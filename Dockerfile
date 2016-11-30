@@ -9,4 +9,4 @@ RUN npm install -g cordova ionic && npm rebuild node-sass
 
 EXPOSE 8100
 
-CMD ["ionic", "serve"]
+CMD ["ionic", "serve", "--nolivereload"]

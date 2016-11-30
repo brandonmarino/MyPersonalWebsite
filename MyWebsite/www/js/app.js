@@ -91,6 +91,7 @@ angular.module('starter', ['ionic', 'pdf', 'starter.controllers', 'starter.servi
     }
   });
 
+
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/aboutme');
 

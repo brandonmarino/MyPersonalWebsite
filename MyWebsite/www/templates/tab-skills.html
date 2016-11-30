@@ -1,6 +1,63 @@
 <ion-view view-title="My Skills">
   <ion-content class="padding">
     <div class="tab-content">
+      <div class="all-skills-profiles">
+        <div class="skills-profile languages">
+          <h4>
+            My Language Experience
+          </h4>
+          <div class="skill language-skill" ng-repeat="language in languages">
+            <img class="prog-title" src={{language.image}}>
+            <div class="prog-bar">
+              <p style="text-align:center;">
+                {{language.years}} Years
+              </p>
+              <div class="percentage-bar" style="width:100%; background: #DBDDDE;">
+                <div class="percentage-bar" style="width: {{language.percentage}}%; background: #007AFF;" ></div> 
+              </div>
+            </div>
+        </div>
+
+        <div class="skills-profile hosting">
+          <h4>
+            My Website Hosting and Management Experience
+          </h4>
+          {{hosting}}
+        </div>
+
+        <div class="skills-profile database-experience">
+          <h4>
+      	    Past Database Experience
+          </h4>
+          {{database}}
+        </div>
+
+        <div class="skills-profile data-structures">
+          <h4>
+      	   Data Structures and Programming Strategies
+          </h4>
+
+          <div class="skill structure-skill">
+            <p>
+              Version Control Experience
+              <br>
+              {{versionControl}}
+            </p>
+
+            <p>
+              Strategies
+              <br>
+              {{strats}}
+            </p>
+
+            <p>
+              Structures
+              <br>
+              {{structs}}
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </ion-content>
 </ion-view>
