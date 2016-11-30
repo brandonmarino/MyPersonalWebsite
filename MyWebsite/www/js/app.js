@@ -24,7 +24,7 @@ angular.module('starter', ['ionic', 'pdf', 'starter.controllers', 'starter.servi
 })
 
 .config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
-
+  $ionicConfigProvider.scrolling.jsScrolling(false);
   $ionicConfigProvider.tabs.position('top');
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
